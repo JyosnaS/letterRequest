@@ -1,0 +1,21 @@
+{
+  "name": "letter_provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.7",
+    "html-pdf-node": "^1.0.7",
+    "mongoose": "^5.12.13",
+    "nodemailer": "^6.6.1"
+  }
+}
