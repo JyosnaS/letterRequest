@@ -5,6 +5,7 @@ const pdf = require("html-pdf-node")
 const fs = require("fs")
 const nodemailer = require("nodemailer")
 const RequestModel = require("../schemas/request.model")
+const moment = require('moment');
 
 
 const emailConfig = process.env.EMAIL_CONFIG? JSON.parse(process.env.EMAIL_CONFIG):{};
@@ -12,7 +13,7 @@ const transporter = nodemailer.createTransport(emailConfig);
 
 
 const processT = (email, fullname, type) => {
-    const content = tempService(type, { fullname });
+    const content = tempService(type, { fullname, date: moment().format('DD-MM-YYYY') });
     const option = {
         format: "A4",
         margin: {
