@@ -17,5 +17,8 @@
     "html-pdf-node": "^1.0.7",
     "mongoose": "^5.12.13",
     "nodemailer": "^6.6.1"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
